@@ -3,7 +3,7 @@ console.log("working");
 
 const fetchWeather=((address)=>{
     
-    fetch(`http://localhost:3000/weather?address=${address}`).then((responce)=>{
+    fetch(`/weather?address=${address}`).then((responce)=>{
 
     responce.json().then((data)=>{
         if(data.error){
