@@ -13,7 +13,7 @@ const forecast=(latitude,longitude,callback)=>{
             else if(body.error){
                 callback("No match found!",undefined);
             }else{
-                    callback(undefined,"Weather is mostly "+body.current.weather_descriptions[0]+". It is currently "+body.current.temperature+" degree out and feels like "+body.current.feelslike+" "+body.current.precip+"% chance of rain");
+                    callback(undefined,"Weather is mostly "+body.current.weather_descriptions[0]+". It is currently "+body.current.temperature+" degree out and feels like "+body.current.feelslike+". There is "+body.current.precip+"% chance of rain");
             }
     })
 }
